@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Validação JS</title>
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/estilos.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <header>
+                <h2>Nova Conta</h2>
+            </header>
+
+            <div>
+                <form action="/processa.php" method="POST" accept-charset="UTF-8" id="formulario">
+                    <div class="form-control">
+                        <label for="c-nome">Nome de Usuário</label>
+                        <input type="text" name="nome" class="validar" id="c-nome" placeholder="Digite o seu nome">
+                    </div>
+    
+                    <div class="form-control">
+                        <label for="c-email">Email</label>
+                        <input type="email" name="email"  class="validar" id="c-email" placeholder="Digite o seu email">
+                    </div>
+    
+                    <div class="form-control">
+                        <label for="c-senha">Senha</label>
+                        <input type="password" name="senha"  class="validar" id="c-senha" placeholder="Digite a sua senha">
+                    </div>
+    
+                    <div class="form-control">
+                        <label for="c-confirmar-senha">Confirmar Senha</label>
+                        <input type="password" name="confirmar-senha" class="validar" id="c-confirmar-senha" placeholder="Confirme a senha">
+                    </div>
+    
+                    <button type="submit" class="btn" id="btn-enviar">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

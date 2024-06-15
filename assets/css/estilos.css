@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+:root {
+    font-size: 62.5%;
+    --liner-gradient: linear-gradient(0.25turn, #1d5d79, #173d61, #10144b);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: #000;
+    position: relative;
+    height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.container > header {
+    text-align: center;
+    background-image: var(--liner-gradient);
+    padding-block: 1.1rem;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+
+.container > header h2 {
+    color: white;
+}
+
+.container > header + div {
+    padding: 2rem .9rem;
+}
+
+.form-control {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .3rem;
+    margin-bottom: 1.6rem;
+}
+
+.form-control label {
+    font-size: 1.3rem;
+}
+
+.form-control label::after {
+    display: inline-block;
+    margin-inline: 3px;
+    content: '*';
+}
+
+.form-control input {
+    padding: .4rem;
+    border-width: .1rem;
+}
+
+.span-error-submit, 
+.span-error-change {
+    color: red;
+    font-size: 11px;
+}
+
+.border-error {
+    border-color: red;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: #1d5d79;
+    color: white;
+    display: block;
+    width: 100%;
+    padding-block: .6rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    transition: all 1500ms;
+    -webkit-transition: all 1500ms;
+    -moz-transition: all 1500ms;
+    -ms-transition: all 1500ms;
+    -o-transition: all 1500ms;
+}
+
+.btn:hover {
+    background-color: #173d61;
+}
